@@ -46,7 +46,6 @@ export default function DataUploaderView({ onNext, onPrev }: Props) {
         labelDescription="Max file size is 5mb. Only .json files are supported."
         buttonLabel="Add file"
         buttonKind="primary"
-        size="md"
         filenameStatus="edit"
         accept={['.json']}
         multiple={false}
