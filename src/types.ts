@@ -191,8 +191,16 @@ export interface TaskEvaluation {
   readonly annotations: {
     [key: string]: { [key: string]: Annotation };
   };
+  readonly nuggets?: Nuggets[];
   readonly contexts?: Document[];
   [key: string]: any;
+}
+
+export interface Nuggets {
+  nugget_id: string;
+  gpt4o_assignment: string;
+  bespoke_score: number;
+  importance: number;
 }
 
 export interface RawData {
